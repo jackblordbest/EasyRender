@@ -95,7 +95,7 @@ EasyRender.Renderizar(document.body , function () {
 
 
 
-### Javascript (Ejemplo)
+### HTML evitando el doble renderizado +velocidad (Ejemplo)
 
 
 ```javascript
@@ -116,13 +116,17 @@ EasyRender.Renderizar(document.body , function () {
 
 	</script>
 </body>
---------------------------
+
+
+<script type="text/javascript">
+
 EasyRender.Renderizar(document.getElementById("EasyRender") , function () {
 
   console.log("renderizado");
         
 }, document.body );
 
+</script>
 
 ```
 
