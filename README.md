@@ -32,6 +32,65 @@ Sí quiere evitar el doble renderizado del html, que cargue el html y después d
 
 salida_html = document.getElementsByClassName("page-content") || document.body;
 
+
+
+### HTML NORMAL (Ejemplo)
+
+*Variables globales
+*Funciones
+
+```javascript
+
+<body>
+<h1>{{ ajustes.saludos; }}</h1>	 
+
+
+<h1>{{ 
+
+if (hola = "bien") {
+  return hola;
+} else {
+  return cualquier_func ();
+}
+
+}}</h1>	
+
+<h1>{{ 
+
+function saludos () {
+   var guay = "saludos";
+   return guay;
+};
+
+
+return saludos();
+
+}}</h1>	
+
+
+<h1>{{ Console.log("Funciona");"Titulo;" }}</h1>	
+
+
+
+
+<script type="text/javascript">
+
+EasyRender.Renderizar(document.body , function () {
+
+  console.log("renderizado");
+        
+});
+
+</script>
+
+
+</body>
+
+```
+
+
+
+
 ### Javascript (Ejemplo)
 
 
@@ -64,37 +123,7 @@ EasyRender.Renderizar(document.getElementById("EasyRender") , function () {
 ```
 
 
-### HTML (Ejemplo)
 
-*Variables globales
-*Funciones
-
-```javascript
-<h1>{{ ajustes.saludos; }}</h1>	 
-
-
-<h1>{{ 
-
-if (hola = "bien") {
-  return hola;
-}
-
-}}</h1>	
-
-<h1>{{ Console.log("Funciona");"Titulo;" }}</h1>	
-
-<script type="text/javascript">
-
-EasyRender.Renderizar(document.body , function () {
-
-  console.log("renderizado");
-        
-});
-
-</script>
-
-
-```
 
 
 
