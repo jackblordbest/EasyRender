@@ -18,20 +18,57 @@ EasyRender.Marca_F = '}}'; //Marca de búsqueda final del html
 
 
 ## Renderizar el html
+                                               (Opcional)
+EasyRender.Renderizar(entrada_html, callback, salida_html);
 
-EasyRender.Renderizar(objeto);
+entrada_html = document.getElementsByClassName("page-content") || document.body;
 
-/*
+callback = true;
 
-objeto = document.body;
-objeto = document.getElementsByClassName("page-content")[0];
-etc...
-*/
+salida_html --> (Opcional) Por defecto la salida se redirige a la entrada. 
+
+Sí quiere evitar el doble renderizado del html, que cargue el html y después de que haya cargado vuelva a cargar el nuevo html formateado. Debe introducir sú html en un objeto que no se renderizará (<script> </script>), introducir como entrada de html estás etquetas por sú id o como desee y redirigir la salida al html de la página. Ejemplo más abajo.
+
+
+salida_html = document.getElementsByClassName("page-content") || document.body;
+
+### Javascript (Ejemplo)
+
+
+```javascript
+<body>
+	<script id="EasyRender" type="text/html">
+
+
+        <h1>{{
+
+
+        if (ajustes.produccion) {
+            return "sdasddsa";
+
+        }
+
+        }}</h1>	 
+
+
+	</script>
+</body>
+--------------------------
+EasyRender.Renderizar(document.getElementById("EasyRender") , function () {
+
+  console.log("renderizado");
+        
+}, document.body );
+
+
+```
+
 
 ### HTML (Ejemplo)
 
 *Variables globales
 *Funciones
+
 ```javascript
 <h1>{{ ajustes.saludos; }}</h1>	 
 
@@ -46,8 +83,19 @@ if (hola = "bien") {
 
 <h1>{{ Console.log("Funciona");"Titulo;" }}</h1>	
 
+<script type="text/javascript">
+
+EasyRender.Renderizar(document.body , function () {
+
+  console.log("renderizado");
+        
+});
+
+</script>
+
+
 ```
-...
+
 
 
 
