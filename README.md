@@ -1,5 +1,5 @@
 # EasyRender
-Utilidades para la creación de aplicaciones web rápidas usando framework7 y similares. Rápida y pequeño tamaño.
+Utilidades para la creación de aplicaciones web rápidas usando framework7 y similares. Rápido y pequeño tamaño.
 Compartido para quien busque algo simple y eficaz. Se aceptan mejoras, sujerencias y añadidos.
 
 
