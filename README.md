@@ -2,7 +2,7 @@
 Utilidades para la creación de aplicaciones web rápidas usando framework7 y similares. Rápido y pequeño tamaño.
 Compartido para quien busque algo simple y eficaz. Se aceptan mejoras, sujerencias y añadidos.
 
-
+Busco remplazar renderizadores tan "complejos" como vue.js o Template7 y conseguir el mismo resultado sin usar etiquetas o nombres personalizados.
 
 ## Uso
 <script type="text/javascript" src="recursos/modulos/EasyRender/EasyRender.js"></script>
