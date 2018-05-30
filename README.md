@@ -18,8 +18,8 @@ EasyRender.Marca_F = '}}'; //Marca de búsqueda final del html
 
 
 ## Renderizar el html
-                                               (Opcional)
-EasyRender.Renderizar(entrada_html, callback, salida_html);
+                                               
+EasyRender.Renderizar(entrada_html, callback, salida_html<Opcional>);
 
 entrada_html = document.getElementsByClassName("page-content") || document.body;
 
