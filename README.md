@@ -19,18 +19,22 @@ EasyRender.Marca_F = '}}'; //Marca de búsqueda final del html
 
 ## Renderizar el html
                                                
-EasyRender.Renderizar(entrada_html, callback, salida_html<Opcional>);
+EasyRender.Renderizar ( entrada_html , callback , salida_html<Opcional> );
 
-entrada_html = document.getElementsByClassName("page-content") || document.body;
+---entrada_html = document.getElementsByClassName("page-content") || document.body;
 
-callback = true;
+---callback = //llamada renderizado finalizado.
 
-salida_html --> (Opcional) Por defecto la salida se redirige a la entrada. 
+---salida_html --> (Opcional) Por defecto la salida se redirige a la entrada. 
 
 Sí quiere evitar el doble renderizado del html, que cargue el html y después de que haya cargado vuelva a cargar el nuevo html formateado. Debe introducir sú html en un objeto que no se renderizará (<script> </script>), introducir como entrada de html estás etquetas por sú id o como desee y redirigir la salida al html de la página. Ejemplo más abajo.
 
 
 salida_html = document.getElementsByClassName("page-content") || document.body;
+
+
+--- return = Sí no se especifica el return se añadirá automáticamente. Sí se detecta un "return" dentro del html se deberá especificar la salida con ese "return".
+
 
 
 
@@ -130,7 +134,7 @@ EasyRender.Renderizar(document.getElementById("EasyRender") , function () {
 
 ## Importar Script
 
-EasyRender.ImportarScript(nombre, callback);
+EasyRender.ImportarScript( nombre , callback );
 ```javascript
 EasyRender.ImportarScript ("recursos/modulos/general/utilidades.js", function() {
         console.log("script cargado");
@@ -141,7 +145,7 @@ EasyRender.ImportarScript ("recursos/modulos/general/utilidades.js", function() 
 
 ## Eliminar Script
 
-EasyRender.EliminarScript(nombre);
+EasyRender.EliminarScript( nombre );
 ```javascript
 EasyRender.ImportarScript ("recursos/modulos/general/utilidades.js");
 ```
@@ -149,7 +153,7 @@ EasyRender.ImportarScript ("recursos/modulos/general/utilidades.js");
 
 ## Importar Css
 
-EasyRender.ImportarCss(nombre, callback);
+EasyRender.ImportarCss ( nombre , callback );
 ```javascript
 EasyRender.ImportarScript ("recursos/modulos/general/estylo.css", function() {
         console.log("css cargado");
