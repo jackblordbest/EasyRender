@@ -165,7 +165,11 @@ EasyRender.ImportarScript ("recursos/modulos/general/estylo.css", function() {
 ```
 *Para acceder a los scripts cargados: EasyRender.Scrips_Cargados;
 
+## Depurar
 
+EasyRender.Depurar();
+
+Habilita la edición en tiempo real desde el navegador del documento body (<body></body>).
 
 
 
