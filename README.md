@@ -5,7 +5,7 @@ Compartido para quien busque algo simple y eficaz. Se aceptan mejoras, sujerenci
 Busco remplazar renderizadores tan "complejos" como vue.js o Template7 y conseguir el mismo resultado sin usar etiquetas o nombres personalizados.
 
 ## Uso
-<script type="text/javascript" src="recursos/modulos/EasyRender/EasyRender.js"></script>
+<script type="text/javascript" src="EasyRender.js"></script>
 
 Objeto: EasyRender;
 
